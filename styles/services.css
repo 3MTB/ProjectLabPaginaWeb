@@ -1,0 +1,33 @@
+.products article {
+
+    p {
+        color: #000000de;
+    }
+
+    &:hover {
+        min-height: 550px;
+    }
+}
+
+.mantenimiento,
+.camara,
+.alarma {
+
+    .description {
+        display: none;
+        transition: background 3s ease-in-out;
+
+
+    }
+
+    &:hover {
+        .normal {
+            display: none;
+        }
+
+        .description {
+            display: inherit;
+            background-color: #f5f5f5;
+        }
+    }
+}

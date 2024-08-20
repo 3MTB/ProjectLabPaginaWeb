@@ -1,0 +1,10 @@
+.valores {
+    & ul li {
+        color: #575454;
+    }
+
+    & strong {
+        color: var(--yellowDetail);
+        font-weight: 400;
+    }
+}

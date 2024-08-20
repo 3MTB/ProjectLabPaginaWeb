@@ -1,0 +1,133 @@
+@media (max-width :550px) {
+    .contenedor .products article {
+        height: 100px;
+        max-width: 150px;
+        max-height: 270px;
+
+        img {
+            max-width: 90px;
+            max-height: 200px;
+        }
+    }
+}
+
+
+.contenedor {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.contenedor .products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.contenedor .products article {
+    width: 200px;
+    height: 300px;
+    margin: 15px;
+    padding: 20px;
+
+    box-shadow: 3px 2px 10px -3px rgba(0, 0, 0, 0.58);
+
+
+    border-radius: 8px;
+    backdrop-filter: blur(20px);
+    overflow: hidden;
+    text-align: center;
+    transition: all .3s;
+
+    &:hover {
+        transform: scale(1.03);
+
+        .line::after,
+        .line::before {
+            background-color: red;body {
+                background-color: #000;
+            }
+            
+        }
+    }
+}
+
+
+.products img {
+    max-width: 190px;
+    max-height: 100px;
+    border-bottom: 1px solid var(--yellowDetail);
+    padding-bottom: 30px;
+
+}
+
+
+
+.products article p {
+    font-size: 16px;
+    color: rgb(188, 188, 184);
+}
+
+
+.products article .line::after,
+.line::before {
+    position: absolute;
+    content: "";
+    width: 3px;
+    height: calc(100% - 20px);
+    background-color: var(--yellowDetail);
+    top: 10px;
+    left: 10px;
+
+
+}
+
+.products .options {
+    display: flex;
+
+    a {
+        padding: 6px;
+        border-radius: 3px;
+        border: 0px solid var(--yellowDetail);
+        transition: all .6s ease;
+
+        &:hover::after {
+            content: " »";
+        }
+    }
+
+    a,
+    a:active {
+        display: inline-flex;
+        text-decoration: none;
+        color: var(--yellowDetail);
+        color: #000;
+        transform: all 3s;
+
+    }
+
+    /* AGREGAR ANIMACION PARA CAMBIAR LOS BORDES SOMNREADOS CON HOVER */
+    a:first-of-type {
+        border-width: 1px 0px 0px 0px;
+
+        background-color: var(--yellowDetail);
+        font-weight: 400;
+
+        &:hover {
+            border: none;
+            background-color: var(--yellowDetail);
+            color: #000;
+        }
+
+    }
+
+    a:last-of-type {
+        margin-left: auto;
+        border-width: 0px 0px 1px 0px;
+
+        &:hover {
+            border: none;
+            background-color: var(--yellowDetail);
+            color: #000;
+        }
+    }
+}
