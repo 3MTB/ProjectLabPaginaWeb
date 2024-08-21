@@ -21,16 +21,11 @@ body {
         display: flex !important;
     }
 
-    header nav {
-        background-color: black !important;
-
-    }
-
     header nav ul {
         display: var(--movil);
         flex-direction: column;
         justify-content: center;
-        align-items: center;
+        align-items: start;
     }
 
 }
@@ -48,6 +43,7 @@ body {
     align-items: center;
 
     padding: 3px;
+    max-width: 100%;
 }
 
 .logo img {
@@ -84,28 +80,24 @@ body {
 
 
 header nav {
-    width: 100%;
     box-shadow: 3px 2px 10px -3px rgba(0, 0, 0, 0.58);
-
 }
 
 header nav ul {
     list-style-type: none;
     text-align: center;
-
 }
 
 header nav ul li {
     display: inline-flex;
-    padding: 5px;
+    padding: 15px;
     border-bottom: 2px solid var(--yellowDetail);
-    margin-left: 20px;
 }
 
 header nav ul li:hover {
-    background-color: var(--yellowDetail);
     background-color: #fffbc2;
-    transition: background .4s ease 0s;
+    transition: background .5s ease 0s;
+
 }
 
 header nav a,
@@ -116,10 +108,9 @@ a:visited {
 
 .currentPage {
     border-color: #000;
-
     a {
         color: var(--yellowDetail);
-        font-weight: bolder;
+        /*     font-weight: bolder; */
     }
 }
 
@@ -189,4 +180,11 @@ footer .inFooter {
     & h3 {
         border-bottom: .1px solid #6482AD;
     }
+    & li:nth-child(1) a{
+        color: rgb(34, 255, 0);
+    }
+    & li:nth-child(2) a{
+        color: rgb(225, 133, 3);
+    }
+
 }
