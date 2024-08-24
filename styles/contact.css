@@ -6,8 +6,7 @@
     flex-direction: column;
 }
 
-.commonContacts a,
-a:active {
+.commonContacts a {
     text-decoration: none;
     margin: 0 auto;
     padding: 10px;

@@ -90,14 +90,13 @@ header nav ul {
 
 header nav ul li {
     display: inline-flex;
-    padding: 15px;
     border-bottom: 2px solid var(--yellowDetail);
+    padding: 20px;
 }
 
 header nav ul li:hover {
     background-color: #fffbc2;
     transition: background .5s ease 0s;
-
 }
 
 header nav a,
@@ -106,11 +105,15 @@ a:visited {
     text-decoration: none;
 }
 
+
+
+
+
 .currentPage {
     border-color: #000;
+
     a {
         color: var(--yellowDetail);
-        /*     font-weight: bolder; */
     }
 }
 
@@ -183,16 +186,18 @@ footer .inFooter {
     & h3 {
         border-bottom: .1px solid #6482AD;
     }
-    & li:nth-child(1) a{
-        color: rgb(34, 255, 0);
+
+    & li:nth-child(1) a {
+        color: #9bcaa2;
     }
-    & li:nth-child(2) a{
-        color: rgb(225, 133, 3);
+
+    & li:nth-child(2) a {
+        color: rgb(147, 91, 13);
     }
 
 }
 
-footer .autor{
+footer .autor {
     text-align: center;
 
 }
